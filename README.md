@@ -3,9 +3,10 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 ## Description
-My motivation was to create an app that keeps track of employees. I created this to test my skills using MYSQL. 
 
-## Table of Contents 
+My motivation was to create an app that can help orginize a companies employees and have a few different ways to filter results. I created this to test my skills using MYSQL. This app can be customized for a companies individual needs!
+
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -16,26 +17,30 @@ My motivation was to create an app that keeps track of employees. I created this
 ### Installation
 
 To install necessary dependencies, run the following command
+
 ```md
-npm init -y 
-npm i 
+npm init -y
+npm i
 ```
+
+After running those commands in your termnial you will be need to add the table through MYSQL and seed the database.
 
 ### Usage
+
 ```md
-run node index.js
+npm run start
 ```
 
-### Contrnode ibuting
-Fork reqo and submit pull request.
+### Contributing
+
+If you would like to contribute to this app please the fork reqo and submit pull request.
 
 ### Tests
-
-To run tests, run the following command:
 
 This app has no tests
 
 ### Questions
-Please reach out to me on Github username jessemarino for any questions. 
 
-URL to walkthrough: https://drive.google.com/file/d/1n33wDof_xtzTxA284gAW6WnORsgYSZ36/view
+Please reach out to me on Github username jessemarino for any questions.
+
+![screenshot](./assets/images/rolemaster.png)
