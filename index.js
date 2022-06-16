@@ -6,12 +6,12 @@ require("console.table");
 init();
 
 function init() {
-  const logo = logo({ name: "Role Master" }).render();
-  console.log(logo);
-  mainQuestions();
+  const logoContent = logo({ name: "Role Master" }).render();
+  console.log(logoContent);
+  initQuestions();
 }
 
-function mainQuestions() {
+function initQuestions() {
   prompt([
     {
       type: "list",
@@ -137,7 +137,7 @@ function viewEmployees() {
       console.log("\n");
       console.table(employees);
     })
-    .then(() => loadMainPrompts());
+    .then(() => initQuestions());
 }
 
 function viewEmployeesByDepartment() {
@@ -162,7 +162,7 @@ function viewEmployeesByDepartment() {
         console.log("\n");
         console.table(employees);
       })
-      .then(() => loadMainPrompts());
+      .then(() => initQuestions());
   });
 }
 
@@ -192,7 +192,7 @@ function viewEmployeesByManager() {
           console.table(employees);
         }
       })
-      .then(() => loadMainPrompts());
+      .then(() => initQuestions());
   });
 }
 
@@ -214,7 +214,7 @@ function removeEmployee() {
     ])
       .then((res) => db.removeEmployee(res.employeeId))
       .then(() => console.log("Removed employee from the database"))
-      .then(() => loadMainPrompts());
+      .then(() => initQuestions());
   });
 }
 
@@ -252,7 +252,7 @@ function updateEmployeeRole() {
         ])
           .then((res) => db.updateEmployeeRole(employeeId, res.roleId))
           .then(() => console.log("Updated employee's role"))
-          .then(() => loadMainPrompts());
+          .then(() => initQuestions());
       });
     });
   });
@@ -295,7 +295,7 @@ function updateEmployeeManager() {
         ])
           .then((res) => db.updateEmployeeManager(employeeId, res.managerId))
           .then(() => console.log("Updated employee's manager"))
-          .then(() => loadMainPrompts());
+          .then(() => initQuestions());
       });
     });
   });
@@ -308,7 +308,7 @@ function viewRoles() {
       console.log("\n");
       console.table(roles);
     })
-    .then(() => loadMainPrompts());
+    .then(() => initQuestions());
 }
 
 function addRole() {
@@ -337,7 +337,7 @@ function addRole() {
     ]).then((role) => {
       db.createRole(role)
         .then(() => console.log(`Added ${role.title} to the database`))
-        .then(() => loadMainPrompts());
+        .then(() => initQuestions());
     });
   });
 }
@@ -361,7 +361,7 @@ function removeRole() {
     ])
       .then((res) => db.removeRole(res.roleId))
       .then(() => console.log("Removed role from the database"))
-      .then(() => loadMainPrompts());
+      .then(() => initQuestions());
   });
 }
 
@@ -372,7 +372,7 @@ function viewDepartments() {
       console.log("\n");
       console.table(departments);
     })
-    .then(() => loadMainPrompts());
+    .then(() => initQuestions());
 }
 
 function addDepartment() {
@@ -385,7 +385,7 @@ function addDepartment() {
     let name = res;
     db.createDepartment(name)
       .then(() => console.log(`Added ${name.name} to the database`))
-      .then(() => loadMainPrompts());
+      .then(() => initQuestions());
   });
 }
 
@@ -406,7 +406,7 @@ function removeDepartment() {
     })
       .then((res) => db.removeDepartment(res.departmentId))
       .then(() => console.log(`Removed department from the database`))
-      .then(() => loadMainPrompts());
+      .then(() => initQuestions());
   });
 }
 
@@ -417,7 +417,7 @@ function viewUtilizedBudgetByDepartment() {
       console.log("\n");
       console.table(departments);
     })
-    .then(() => loadMainPrompts());
+    .then(() => initQuestions());
 }
 
 function addEmployee() {
@@ -479,14 +479,14 @@ function addEmployee() {
             .then(() =>
               console.log(`Added ${firstName} ${lastName} to the database`)
             )
-            .then(() => loadMainPrompts());
+            .then(() => initQuestions());
         });
       });
     });
   });
 }
 
-function quit() {
+function exit() {
   console.log("Bye!");
   process.exit();
 }
