@@ -4,7 +4,7 @@
 
 ## Description
 
-My motivation was to create an app that can help orginize a companies employees and have a few different ways to filter results. I created this to test my skills using MYSQL. This app can be customized for a companies individual needs!
+Role Master allows users to orginize their work force and keep tabs on essential information. Users will be able to create new employees and give them a role, salary, and department. You can assign managers to employees or assign existing employees to be managers. Employees can have their roles and departments updated too. Users will also be able to add and update roles and departments
 
 ## Table of Contents
 
