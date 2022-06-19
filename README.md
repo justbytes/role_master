@@ -11,7 +11,6 @@ My motivation was to create an app that can help orginize a companies employees 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
 
 ### Installation
@@ -35,9 +34,6 @@ npm run start
 
 If you would like to contribute to this app please the fork reqo and submit pull request.
 
-### Tests
-
-This app has no tests
 
 ### Questions
 
