@@ -37,6 +37,6 @@ If you would like to contribute to this app please the fork reqo and submit pull
 
 ### Questions
 
-Please reach out to me on Github username jessemarino for any questions.
+If you have any questions please reach out via Github, my username jessemarino. 
 
 ![screenshot](./assets/images/rolemaster.png)
