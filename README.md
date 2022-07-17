@@ -4,7 +4,7 @@
 
 ## Description
 
-Role Master allows users to orginize their work force and keep tabs on essential information. Users will be able to create new employees and give them a role, salary, and department. You can assign managers to employees or assign existing employees to be managers. Employees can have their roles and departments updated too. Users will also be able to add and update roles and departments
+Role Master allows users to organize their work force and keep tabs on essential information. Users will be able to create new employees and give them a role, salary, and department. You can assign managers to employees or assign existing employees to be managers. Employees can have their roles and departments updated too. Users will also be able to add and update roles and departments
 
 ## Table of Contents
 
