@@ -1,6 +1,5 @@
 # Role Master
 
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 ## Description
 
@@ -10,33 +9,20 @@ Role Master allows users to organize their work force and keep tabs on essential
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [Questions](#questions)
 
 ### Installation
 
 To install necessary dependencies, run the following command
 
 ```md
-npm init -y
-npm i
+npm install
 ```
-
-After running those commands in your termnial you will be need to add the table through MYSQL and seed the database.
 
 ### Usage
 
 ```md
+npm run seed
 npm run start
-```
-
-### Contributing
-
-If you would like to contribute to this app please the fork reqo and submit pull request.
-
-
-### Questions
-
-If you have any questions please reach out via Github, my username jessemarino. 
+``` 
 
 ![screenshot](./assets/images/rolemaster.png)
